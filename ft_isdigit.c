@@ -6,11 +6,11 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:09:04 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/07/02 17:49:12 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 18:10:27 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 	{

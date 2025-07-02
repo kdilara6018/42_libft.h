@@ -6,13 +6,13 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:21:09 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/07/02 17:49:36 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 18:14:27 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 127)
+	if (c >= 32 && c <= 126)
 	{
 		return (1);
 	}

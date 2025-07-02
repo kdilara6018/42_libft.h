@@ -6,11 +6,11 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:17:47 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/07/02 17:49:42 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 18:10:39 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 	{

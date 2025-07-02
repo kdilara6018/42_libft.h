@@ -6,11 +6,9 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 17:34:59 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/07/02 17:39:33 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 18:12:44 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_toupper(int c)
 {

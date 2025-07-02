@@ -6,11 +6,11 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 18:13:04 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/07/02 17:39:30 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 18:12:51 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
