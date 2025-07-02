@@ -6,40 +6,22 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 19:46:15 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/06/02 12:51:05 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:43:55 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include"libft.h"
 
-int ft_len(const char *str)
+char	*ft_strrchr(const char *str, int c)
 {
-    int i;
-    i=0;
-    while(*str)
-    {
-        str++;
-        i++;
-    }
-    return i;
-}
+	int	i;
 
-char *ft_strrchr(const char *str, int c)
-{
-	int i;
-    i=ft_len(str);
-	while (i>=0)
-    {
-        if (str[i]==(char)c)
-            return (char *)(str+i);
-        i--;
-    }
-
-    return '\0';
-}
-int main()
-{
-	char str[] = "dilarakaratas";
-	printf("%s \n",ft_strrchr(str,'r'));
-	
+	i = ft_strlen(str);
+	while (i >= 0)
+	{
+		if (str[i] == (char)c)
+			return ((char *)(str + i));
+		i--;
+	}
+	return (0);
 }

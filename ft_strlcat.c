@@ -6,47 +6,37 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 17:01:49 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/05/30 17:28:27 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:38:22 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-size_t ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int i;
-	i=0;
-	int j;
-	j=0;
-	int m;
-	m=1;
-	while(dst[i])
+	size_t	i;
+	size_t	j;
+	size_t	m;
+	size_t	k;
+
+	i = 0;
+	j = 0;
+	m = 1;
+	while (dst[i])
 	{
 		i++;
 	}
-	while(src[j])
+	while (src[j])
 	{
 		j++;
 	}
-	int k;
-	k=i;
-	while((size>k+1)&&src[m-1])
+	k = i;
+	while ((size > (k + 1)) && src[m - 1])
 	{
-		dst[i+m-1]=src[m-1];
+		dst[i + m - 1] = src[m - 1];
 		m++;
 		k++;
-		
 	}
-	dst[i+m-1]='\0';
-	return i+j;
-}
-int main()
-{
-	const char src[] = "selamselamsela";
-	char dst[100] = "dilara";
-    size_t result;
-	result = ft_strlcat(dst, src, 50);
-	printf("%s\n", dst);
-	printf("%ld", result);
-	return 0;
+	dst[i + m - 1] = '\0';
+	return (i + j);
 }

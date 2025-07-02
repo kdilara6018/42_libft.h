@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isdigit.c                                          :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:09:04 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/05/29 14:11:34 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:49:12 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int isdigit (int c)
+int	isdigit(int c)
 {
-	if (c>=48&&c<=57)
+	if (c >= 48 && c <= 57)
 	{
-		return 1;
+		return (1);
 	}
-	else
-		return 0;
-	
-}
-int main()
-{
-printf("%d",isdigit('3'));
+	return (0);
 }

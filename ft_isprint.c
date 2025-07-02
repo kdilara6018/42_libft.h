@@ -6,22 +6,15 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:21:09 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/06/02 15:43:59 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:49:36 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int isprint (int c)
+int	isprint(int c)
 {
-	if (c>=32&&c<=127)
+	if (c >= 32 && c <= 127)
 	{
-		return 1;
+		return (1);
 	}
-	else
-		return 0;
-	
-}
-int main()
-{
-printf("%d",isprint(30));
+	return (0);
 }

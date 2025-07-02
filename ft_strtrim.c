@@ -1,15 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   o_ft_strtrim.c                                     :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/25 15:57:36 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/06/25 16:21:25 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:39:24 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -48,7 +47,7 @@ static size_t	new_end(char const *s1, char const *set)
 
 	j = 0;
 	sw = 1;
-	size_s1 = ft_strlen(s1) -1;
+	size_s1 = ft_strlen(s1) - 1;
 	while (sw)
 	{
 		j = 0;
@@ -81,15 +80,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	result = ft_substr(s1, start, (end + 1));
 	return (result);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	char s1[] = "asasasa-merhaba-asasassa";
-// 	char set[] = "as";
-
-// 	char *r;
-// 	r = ft_strtrim(s1,set);
-// 	printf("%s", r);
-// 	free(r);
-// 	return (0);
-// }

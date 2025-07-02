@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isascii.c                                          :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:17:47 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/05/29 14:19:04 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:49:42 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int isascii (int c)
+int	isascii(int c)
 {
-	if (c>=0&&c<=127)
+	if (c >= 0 && c <= 127)
 	{
-		return 1;
+		return (1);
 	}
-	else
-		return 0;
-	
-}
-int main()
-{
-printf("%d",isascii(128));
+	return (0);
 }

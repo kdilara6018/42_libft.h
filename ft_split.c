@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   o_ft_split.c                                       :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/25 16:23:35 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/06/29 14:39:25 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:46:27 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	w_counter(char const *s, char c)
+static int	w_counter(char const *s, char c)
 {
 	int	c_count;
 	int	i;
@@ -49,8 +49,8 @@ static int	ft_word_len(char *s, char c)
 static void	*all_free(char **split, int a)
 {
 	while (a >= 0)
-		free (split[a--]);
-	free (split);
+		free(split[a--]);
+	free(split);
 	return (NULL);
 }
 

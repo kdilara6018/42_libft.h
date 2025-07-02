@@ -6,22 +6,15 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 18:13:04 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/05/30 18:14:38 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:39:30 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-	if(c>='A'&&	c<='Z')
+	if (c >= 'A' && c <= 'Z')
 	{
-		c+=32;
+		c += 32;
 	}
-	return c;
-}
-int main(){
-	
-	int c='9';
-printf("%c",ft_toupper(c));	
-		return 0;
+	return (c);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   o_ft_substr.c                                      :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/25 15:55:05 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/06/25 15:55:07 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:44:58 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		temp_len = ft_strlen(s) - start;
 	else
 		temp_len = len;
-	temp = malloc(temp_len +1);
+	temp = malloc(temp_len + 1);
 	if (!temp)
 		return (NULL);
 	while (i < temp_len && s[start + i] != '\0')

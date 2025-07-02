@@ -6,21 +6,16 @@
 /*   By: dkaratas <dkaratas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:13:38 by dkaratas          #+#    #+#             */
-/*   Updated: 2025/06/02 13:03:26 by dkaratas         ###   ########.fr       */
+/*   Updated: 2025/07/02 17:50:06 by dkaratas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int isalnum (int c)
+int	isalnum(int c)
 {
-	if ((c>='0'&&c<='9')||((c>='A'&&c<='Z')||(c>='a'&&c<='z')))
+	if ((c >= '0' && c <= '9') || ((c >= 'A' && c <= 'Z') || (c >= 'a'
+				&& c <= 'z')))
 	{
-		return 1;
+		return (1);
 	}
-	else
-		return 0;
-}
-int main()
-{
-printf("%d",isalnum('*'));
+	return (0);
 }
